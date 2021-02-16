@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Microsoft 365 的域所有权验证文件 - 放置在网站根目录中",
+  "Domain": "lksin.gitee.io",
+  "Id": "6aacebba-4b14-4a5a-b644-126d7206c9fa"
+}
