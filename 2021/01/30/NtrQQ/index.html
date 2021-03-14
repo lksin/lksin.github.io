@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ntr QQ | LKsin</title><meta name="keywords" content="QQ"><meta name="author" content="LKsin"><meta name="copyright" content="LKsin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="NtrQQ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ntr QQ">
+<meta property="og:url" content="https://lksin.gitee.io/2021/01/30/NtrQQ/index.html">
+<meta property="og:site_name" content="LKsin">
+<meta property="og:description" content="NtrQQ">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lksin.gitee.io/image/NtrQQ.png">
+<meta property="article:published_time" content="2021-01-30T05:00:00.000Z">
+<meta property="article:modified_time" content="2021-02-03T01:51:16.716Z">
+<meta property="article:author" content="LKsin">
+<meta property="article:tag" content="QQ">
+<meta property="article:tag" content="Windows">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lksin.gitee.io/image/NtrQQ.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://lksin.gitee.io/2021/01/30/NtrQQ/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="preconnect" href="//zz.bdstatic.com"/><meta name="baidu-site-verification" content="erXyAsX0yLmf6LHm"/><meta name="yandex-verification" content="{&quot;theme_color&quot;:{&quot;enable&quot;:true,&quot;main&quot;:&quot;#49B1F5&quot;,&quot;paginator&quot;:&quot;#00c4b6&quot;,&quot;button_hover&quot;:&quot;#FF7242&quot;,&quot;text_selection&quot;:&quot;#00c4b6&quot;,&quot;link_color&quot;:&quot;#99a9bf&quot;,&quot;meta_color&quot;:&quot;#858585&quot;,&quot;hr_color&quot;:&quot;#A4D8FA&quot;,&quot;code_foreground&quot;:&quot;#F47466&quot;,&quot;code_background&quot;:&quot;rgba(27, 31, 35, .05)&quot;,&quot;toc_color&quot;:&quot;#00c4b6&quot;,&quot;blockquote_padding_color&quot;:&quot;#49b1f5&quot;,&quot;blockquote_background_color&quot;:&quot;#49b1f5&quot;}}"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-02-03 09:51:16'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 5.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 实验室</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/2048/"><i class="fa-fw fas fa-images"></i><span> 2048</span></a></li><li><a class="site-page" href="/ypkshua/"><i class="fa-fw fas fa-music"></i><span> 音频可视化</span></a></li></ul></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://lksin.gitee.io/image/NtrQQ.png)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">LKsin</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 实验室</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/2048/"><i class="fa-fw fas fa-images"></i><span> 2048</span></a></li><li><a class="site-page" href="/ypkshua/"><i class="fa-fw fas fa-music"></i><span> 音频可视化</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Ntr QQ</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-01-30T05:00:00.000Z" title="发表于 2021-01-30 13:00:00">2021-01-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-02-03T01:51:16.716Z" title="更新于 2021-02-03 09:51:16">2021-02-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/">资源分享</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="NtrQQ"><a href="#NtrQQ" class="headerlink" title="NtrQQ"></a>NtrQQ</h1><p><code>NtrQQ</code>是一款为<code>QQ/TIM PC版</code>打造的一款集显IP、去广告、功能增强等功能于一体的辅助插件，使用<code>NtrQQ</code>可以让你的<code>PCQQ/TIM</code>更实用、更好用。</p>
+<p><strong>主要功能：</strong><br>消息防撤回、显示对方IP、点亮全部勋章墙进行1.2xQQ等级加速、享受绿钻特权（在群内分享歌曲）、SVIP本地点亮、UI简洁化等。</p>
+<ul>
+<li>本软件是开发者业余时间为了研究技术兴趣制作的免费软件，由于开发者平时较长时间都是在学校度过，佛系更新，请勿催更请勿骚扰。</li>
+<li>欢迎进入<a target="_blank" rel="noopener" href="https://iya.app/">社区</a>（iya.app）以及<a target="_blank" rel="noopener" href="http://bit.ly/2IgAcvP">电报群</a>，与其他志同道合的朋友交流使用心得。</li>
+</ul>
+<h1 id="许可"><a href="#许可" class="headerlink" title="许可"></a>许可</h1><ul>
+<li>下述 <strong>本软件</strong> 为 <strong>NtrQQ</strong> 插件的略称</li>
+<li>本软件的开发、制作和分享仅为了学习和研究 QQPC 版软件内含的设计思想和原理，因兴趣而开发，您需要<strong>保证您的使用是为了学习和交流、且不会用于商业用途</strong>。</li>
+<li>本软件是免费软件，使用软件过程中出现的问题欢迎咨询，但<strong>因使用本软件产生的一切后果由您自行承担</strong>，开发者不会对本软件承担任何责任。</li>
+<li>本软件内的 IP 数据来源全部由网络提供，<strong>不会采集您的个人信息</strong>，其中高级探测功能为本软件论坛会员专用功能，不对外开放。</li>
+<li>由于本软件的特殊性质，某些杀毒软件会干扰程序的正常运作，<strong>如您相信本软件的安全性并希望使用，请放行</strong>。</li>
+<li><strong>本插件与宿主软件相互独立，不修改原始文件，不向普通用户开放，免费提供给本社区会员，仅供个人用户学习研究软件原理，不允许商业使用，切勿用于不法之目的，本插件开发者保留最终解释权。</strong></li>
+<li>本软件开发者对上述条约享有最终解释权，请您遵守。本软件并非强制您安装使用，也没有垄断行为，<strong>若您不同意上述条款，请勿使用、并立刻删除本软件的相关文件</strong>。</li>
+</ul>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h3 id="使用前说明"><a href="#使用前说明" class="headerlink" title="使用前说明"></a>使用前说明</h3><ul>
+<li>相信您作为希望使用本软件的用户，一定具有一定的计算机方面的兴趣和知识，有任何疑问请尝试在社区和电报群反馈，发现疑似 BUG 请在 issue 里提出。</li>
+<li>使用 DIY 插件或是 QQ 机器人类软件，无论是在手机端还是在 PC 端都有被官方封号冻结的风险，所以有以下一些建议。</li>
+<li>建议您为自己的账号绑定手机号和密保等安全措施，手机上<strong>推荐一定</strong>要安装 <strong>QQ安全中心</strong> APP，绑定自己的账号，如此一来即使账号被冻结可以随时手动简单解封。</li>
+<li>建议您使用本插件推荐的最佳兼容版本的 QQ 的官方版本，自行提取 QQ 安装包内文件并配置本插件，不要使用一些来源不明的版本。</li>
+<li>建议您多多关注插件的相关动态，插件目前不会强制您更新，也没有更新提示，但是一旦有更新请及时更换最新版本不要使用旧版。</li>
+<li>由于 QQ 官方近日封锁了旧版 QQ 的版本通道，使用本插件的破解登录和版本号伪造功能可能会导致 QQ 被冻结，所以请使用与插件兼容的、可登录的 QQ 官方的最新版本配合插件使用。</li>
+</ul>
+<h3 id="安装说明"><a href="#安装说明" class="headerlink" title="安装说明"></a>安装说明</h3><p>请提取 QQ/TIM 安装包内的主要文件（QQ 本体和 TXSSO），再将本插件的下述文件放入直接放入 QQ 原版 Bin 目录。</p>
+<h3 id="文件介绍"><a href="#文件介绍" class="headerlink" title="文件介绍"></a>文件介绍</h3><p>下列文件是本插件的相关文件及说明：</p>
+<ul>
+<li>QQ/bin/msimg32.dll（<strong>必须</strong>，程序载入点）</li>
+<li>QQ/bin/NtrQQ/</li>
+<li><ul>
+<li>NtrQQ/NtrQQ.dll（<strong>必须</strong>，本插件主程序）</li>
+</ul>
+</li>
+<li><ul>
+<li>NtrQQ/NtrQQ.ini（<strong>必须</strong>，本插件主配置文件）</li>
+</ul>
+</li>
+<li><ul>
+<li>NtrQQ/Plugin.ini（<strong>必须</strong>，QQ插件管理配置文件）</li>
+</ul>
+</li>
+<li><ul>
+<li>NtrQQ/Version.ini（<strong>必须</strong>，QQ版本号数据配置文件）</li>
+</ul>
+</li>
+<li><ul>
+<li>NtrQQ/Verify.ini（可选，本插件高级功能验证配置文件）</li>
+</ul>
+</li>
+<li><ul>
+<li>NtrQQ/ShowIP.exe（可选，纯真IP数据库管理器）</li>
+</ul>
+</li>
+<li><ul>
+<li>NtrQQ/qqwry.dat（可选，纯真IP数据库文件）</li>
+</ul>
+</li>
+<li><ul>
+<li>NtrQQ/location.loc（可选，LoCi格式IP数据库文件）</li>
+</ul>
+</li>
+</ul>
+<h3 id="高级功能开启方法"><a href="#高级功能开启方法" class="headerlink" title="高级功能开启方法"></a>高级功能开启方法</h3><ul>
+<li>用记事本打开<code>NtrQQ/Verify.ini</code>配置文件</li>
+<li>在<code>[NTRQQ]</code>节的<code>UID=</code>后，输入您的论坛ID（数字）</li>
+<li>打开网页 <a target="_blank" rel="noopener" href="https://iya.app/md5.html">https://iya.app/md5.html</a></li>
+<li>输入您的论坛登陆密码，点击计算</li>
+<li>在<code>[NTRQQ]</code>节的<code>PWD=</code>后，复制刚才计算出的MD5值</li>
+<li>重启QQ后随意打开一个好友的聊天窗口，在窗口边框处右击即可看到高级功能的菜单</li>
+</ul>
+<div class="note danger flat"><p>注意，现在Iya论坛已经关闭新用户注册！所以高级功能暂时失效。<br>但高级模式仅有单项好友检测功能，其余功能还是可以使用的。</p>
+</div>
+
+<h1 id="2020-5-16-更新内容："><a href="#2020-5-16-更新内容：" class="headerlink" title="2020/5/16 更新内容："></a>2020/5/16 更新内容：</h1><h3 id="NtrQQ-7-1-2"><a href="#NtrQQ-7-1-2" class="headerlink" title="NtrQQ 7.1.2"></a>NtrQQ 7.1.2</h3><ul>
+<li>兼容 QQ9.3.3 &amp; TIM3.0.0 (请使用原版安装包绿色提取)</li>
+<li>修复 某些系统环境下可能不稳定的问题</li>
+<li>修复 勋章墙破解失效的问题</li>
+<li>优化 内存补丁采用实时补丁方式代替预加载补丁方式</li>
+<li>优化 默认关闭 Aero 特效相关选项</li>
+<li>更新 QQ版本号数据库至 2020-05-16</li>
+</ul>
+<h1 id="下载地址："><a href="#下载地址：" class="headerlink" title="下载地址："></a>下载地址：</h1><a class="btn-beautify button--animated outline pink larger" target="_blank" rel="noopener" href="https://wwe.lanzous.com/i7nMHl34vva" 
+  title="点击下载"><i class="far fa-hand-point-right fa-fw"></i><span>点击下载</span></a>
+
+<div class="note warning flat"><p><strong>注意！</strong>因为作者暂时没有更新，此版本仅支持到QQ 9.3.3和TIM3.3.0版本，需要下载QQ 9.3.3绿色版或TIM3.0.0绿色版后才能进行Ntr QQ的安装。（<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/Tim/20230571?fr=aladdin">你不会不知道TIM吧？</a>）</p>
+<p><a class="btn-beautify button--animated outline green larger" target="_blank" rel="noopener" href="https://wwe.lanzous.com/iQIeyl36gsj" 
+  title="QQ 9.3.3绿色版点此下载"><i class="far fa-hand-point-right fa-fw"></i><span>QQ 9.3.3绿色版点此下载</span></a></p>
+<p><a class="btn-beautify button--animated outline green larger" target="_blank" rel="noopener" href="https://wwe.lanzous.com/iMtOzl36yti" 
+  title="TIM 3.3.0绿色版点此下载"><i class="far fa-hand-point-right fa-fw"></i><span>TIM 3.3.0绿色版点此下载</span></a></p>
+</div>
+
+<h1 id="作者Github发布页面"><a href="#作者Github发布页面" class="headerlink" title="作者Github发布页面"></a>作者Github发布页面</h1><a class="btn-beautify button--animated blue larger" target="_blank" rel="noopener" href="https://github.com/NtrQQ/download/releases/tag/ntrqq712" 
+  title="点击前往"><i class="far fa-hand-point-right fa-fw"></i><span>点击前往</span></a>
+
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ol>
+<li>尽量使用小号登录。本人使用半年多，QQ号未被冻结过。</li>
+<li>新装了系统后注意安装VC库！</li>
+<li>先安装QQ 9.3.3绿色版（或TIM3.3.0)，然后点击QQ文件夹内的<code>绿化.bat</code>进行绿化，然后安装NtrQQ（将NtrQQ下载好的文件解压后直接放入 QQ 原版 Bin 目录即可）</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">LKsin</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://lksin.gitee.io/2021/01/30/NtrQQ/">https://lksin.gitee.io/2021/01/30/NtrQQ/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://lksin.gitee.io" target="_blank">LKsin</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/QQ/">QQ</a><a class="post-meta__tags" href="/tags/Windows/">Windows</a></div><div class="post_share"><div class="social-share" data-image="https://lksin.gitee.io/image/NtrQQ.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/02/02/ffmpeg/"><img class="prev-cover" src="https://www.todoespacoonline.com/w/wp-content/uploads/2015/04/ffmpeg-logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">.m3u8解密神器 ffmpeg</div></div></a></div><div class="next-post pull-right"><a href="/2021/01/28/bandicam/"><img class="next-cover" src="https://tse4-mm.cn.bing.net/th/id/OIP.i3dfu-0oABdXQSKKSiiQtAHaHa?pid=Api&amp;rs=1" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Bandicam绿色版下载</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/01/01/adobe/" title="Adobe 2021 全套已破解软件集合(Win+Mac)"><img class="cover" src="https://lksin.gitee.io/image/blog/adobe2021.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-01</div><div class="title">Adobe 2021 全套已破解软件集合(Win+Mac)</div></div></a></div><div><a href="/2021/01/28/bandicam/" title="Bandicam绿色版下载"><img class="cover" src="https://tse4-mm.cn.bing.net/th/id/OIP.i3dfu-0oABdXQSKKSiiQtAHaHa?pid=Api&rs=1" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-28</div><div class="title">Bandicam绿色版下载</div></div></a></div><div><a href="/2021/02/11/cywz/" title="白嫖网站推荐"><img class="cover" src="https://lksin.gitee.io/image/T7Mu8Aod3egmC4Q.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-11</div><div class="title">白嫖网站推荐</div></div></a></div><div><a href="/2021/02/02/ffmpeg/" title=".m3u8解密神器 ffmpeg"><img class="cover" src="https://www.todoespacoonline.com/w/wp-content/uploads/2015/04/ffmpeg-logo.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-02</div><div class="title">.m3u8解密神器 ffmpeg</div></div></a></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">LKsin</div><div class="author-info__description">Do what you like to do</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/lksin"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/lksin" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="/2517871772@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="card-content"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#NtrQQ"><span class="toc-number">1.</span> <span class="toc-text">NtrQQ</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%B8%E5%8F%AF"><span class="toc-number">2.</span> <span class="toc-text">许可</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">3.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%89%8D%E8%AF%B4%E6%98%8E"><span class="toc-number">3.0.1.</span> <span class="toc-text">使用前说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E"><span class="toc-number">3.0.2.</span> <span class="toc-text">安装说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%BB%8B%E7%BB%8D"><span class="toc-number">3.0.3.</span> <span class="toc-text">文件介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E5%8A%9F%E8%83%BD%E5%BC%80%E5%90%AF%E6%96%B9%E6%B3%95"><span class="toc-number">3.0.4.</span> <span class="toc-text">高级功能开启方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2020-5-16-%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9%EF%BC%9A"><span class="toc-number">4.</span> <span class="toc-text">2020&#x2F;5&#x2F;16 更新内容：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#NtrQQ-7-1-2"><span class="toc-number">4.0.1.</span> <span class="toc-text">NtrQQ 7.1.2</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80%EF%BC%9A"><span class="toc-number">5.</span> <span class="toc-text">下载地址：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%9C%E8%80%85Github%E5%8F%91%E5%B8%83%E9%A1%B5%E9%9D%A2"><span class="toc-number">6.</span> <span class="toc-text">作者Github发布页面</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">7.</span> <span class="toc-text">注意事项</span></a></li></ol></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/02/11/cywz/" title="白嫖网站推荐"><img src="https://lksin.gitee.io/image/T7Mu8Aod3egmC4Q.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="白嫖网站推荐"/></a><div class="content"><a class="title" href="/2021/02/11/cywz/" title="白嫖网站推荐">白嫖网站推荐</a><time datetime="2021-02-11T04:20:00.000Z" title="发表于 2021-02-11 12:20:00">2021-02-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/02/02/ffmpeg/" title=".m3u8解密神器 ffmpeg"><img src="https://www.todoespacoonline.com/w/wp-content/uploads/2015/04/ffmpeg-logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt=".m3u8解密神器 ffmpeg"/></a><div class="content"><a class="title" href="/2021/02/02/ffmpeg/" title=".m3u8解密神器 ffmpeg">.m3u8解密神器 ffmpeg</a><time datetime="2021-02-01T21:10:13.000Z" title="发表于 2021-02-02 05:10:13">2021-02-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/30/NtrQQ/" title="Ntr QQ"><img src="https://lksin.gitee.io/image/NtrQQ.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ntr QQ"/></a><div class="content"><a class="title" href="/2021/01/30/NtrQQ/" title="Ntr QQ">Ntr QQ</a><time datetime="2021-01-30T05:00:00.000Z" title="发表于 2021-01-30 13:00:00">2021-01-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/28/bandicam/" title="Bandicam绿色版下载"><img src="https://tse4-mm.cn.bing.net/th/id/OIP.i3dfu-0oABdXQSKKSiiQtAHaHa?pid=Api&amp;rs=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Bandicam绿色版下载"/></a><div class="content"><a class="title" href="/2021/01/28/bandicam/" title="Bandicam绿色版下载">Bandicam绿色版下载</a><time datetime="2021-01-28T02:00:00.000Z" title="发表于 2021-01-28 10:00:00">2021-01-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/27/ncov2019/" title="COVID 2019仪表盘"><img src="https://lksin.gitee.io/image/ncov.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="COVID 2019仪表盘"/></a><div class="content"><a class="title" href="/2021/01/27/ncov2019/" title="COVID 2019仪表盘">COVID 2019仪表盘</a><time datetime="2021-01-26T16:00:00.000Z" title="发表于 2021-01-27 00:00:00">2021-01-27</time></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://lksin.gitee.io/image/NtrQQ.png)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By LKsin</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})</script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><script src="https://myhkw.cn/player/js/player.js" id="myhk" key="160657162722" m="1"></script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script>(function(){
+  const bp = document.createElement('script');
+  const curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  bp.dataset.pjax = ''
+  const s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})()</script></div></body></html>
